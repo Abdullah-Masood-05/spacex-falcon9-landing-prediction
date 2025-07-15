@@ -1,68 +1,122 @@
-# SpaceX Falcon 9 Launch Analysis Project
+# 🚀 SpaceX Falcon 9 Launch Analysis Project
 
-## Project Overview
-This project analyzes SpaceX Falcon 9 rocket launches to predict first-stage landing success. By determining landing outcome predictability, we can estimate the cost of a launch. SpaceX advertises Falcon 9 rocket launches at $62 million, significantly less than other providers (which cost upward of $165 million) primarily because SpaceX can reuse the first stage.
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat\&label=Contributions\&colorA=red\&colorB=black)](#)
 
-## Repository Contents
+---
 
-### Data Collection
-- `jupyter-labs-webscraping.ipynb`: Extracts Falcon 9 launch records from Wikipedia using BeautifulSoup
-- `jupyter-labs-spacex-data-collection-api-v2.ipynb`: Collects detailed launch data using SpaceX REST API
+## 📖 Project Overview
 
-### Data Processing
-- `labs-jupyter-spacex-Data wrangling-v2.ipynb`: Cleans and prepares data for analysis
+This project analyzes **SpaceX Falcon 9** rocket launches to predict first-stage landing success. Since SpaceX reuses first stages to reduce cost (e.g., \$62M vs. \$165M by others), predicting successful landings helps estimate launch costs and improve operational efficiency.
 
-### Exploratory Data Analysis (EDA)
-- `jupyter-labs-eda-sql-coursera_sqllite.ipynb`: SQL-based data exploration
-- `jupyter-labs-eda-dataviz-v2.ipynb`: Data visualization and pattern discovery
+---
 
-### Geospatial Analysis
-- `lab-jupyter-launch-site-location-v2.ipynb`: Maps and analyzes launch sites with Folium
-  - Visualizes launch success/failure rates by location
-  - Calculates distances to key facilities
-  - Uses marker clustering to identify patterns
+## 📁 Repository Contents
 
-### Machine Learning
-- `SpaceX-Machine-Learning-Prediction-Part-5-v1.ipynb`: Builds predictive models
-  - Applies SVM, Decision Trees, Logistic Regression, and KNN
-  - Performs hyperparameter tuning
-  - Evaluates model performance
+### 📡 Data Collection
 
-### Interactive Dashboard
-- `spacex_dash_app.py`: A Dash application that provides interactive visualization of launch data
+* `jupyter-labs-webscraping.ipynb`: Scrapes Wikipedia using `BeautifulSoup`.
+* `jupyter-labs-spacex-data-collection-api-v2.ipynb`: Uses SpaceX REST API to collect launch data.
 
-## Technologies Used
-- **Python**: Primary programming language
-- **Pandas & NumPy**: Data manipulation
-- **BeautifulSoup**: Web scraping
-- **Requests**: API interaction
-- **Matplotlib & Seaborn**: Data visualization
-- **Folium**: Geospatial mapping
-- **SQLite**: Database operations
-- **Scikit-learn**: Machine learning
-- **Dash**: Interactive dashboard
+### 🧹 Data Processing
 
-## How to Use This Project
-- Install required libraries using:  
-  `pip install -r requirements.txt`
-- Follow the notebooks in the order listed above for a complete data science workflow
-- Each notebook contains detailed markdown explaining the purpose and methods used
-- Run the Dash application to interact with the data visualizations: `python spacex_dash_app.py`
+* `labs-jupyter-spacex-Data wrangling-v2.ipynb`: Cleans and merges datasets.
 
-## Key Findings
-- Launch success rates vary significantly by launch site
-- Several factors correlate with successful landings, including payload mass and orbit type
-- Machine learning models can predict landing success with good accuracy
+### 📊 Exploratory Data Analysis
 
-## Future Work
-- Incorporate more recent launch data
-- Explore additional features that might affect landing success
-- Develop more sophisticated machine learning models
-- Expand the dashboard functionality
+* `jupyter-labs-eda-sql-coursera_sqllite.ipynb`: SQL-based queries and insights.
+* `jupyter-labs-eda-dataviz-v2.ipynb`: Visualizations using Seaborn and Matplotlib.
 
-## Live Demo
+### 🗺️ Geospatial Analysis
 
-[View the deployed SpaceX Launch Dashboard](https://spacex-falcon9-landing-prediction-ahnx.onrender.com)
+* `lab-jupyter-launch-site-location-v2.ipynb`: Visualizes launch sites using `Folium`.
 
-## Credits
-This project was developed as part of a data science course with materials from IBM.
+  * Marker clustering
+  * Distance calculations
+  * Success/failure rates by site
+
+### 🤖 Machine Learning
+
+* `SpaceX-Machine-Learning-Prediction-Part-5-v1.ipynb`: Predictive modeling using:
+
+  * **Logistic Regression**
+  * **SVM**
+  * **KNN**
+  * **Decision Trees**
+  * Hyperparameter tuning & evaluation
+
+### 📈 Interactive Dashboard
+
+* `spacex_dash_app.py`: Dash app to explore launch data interactively.
+
+---
+
+## 🔧 Tech Stack
+
+<a href="#"> 
+  <img alt="Python" src="https://img.shields.io/badge/Python-%233776AB.svg?&style=for-the-badge&logo=python&logoColor=white"/>
+  <img alt="NumPy" src="https://img.shields.io/badge/NumPy-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white"/>
+  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-%23150458.svg?&style=for-the-badge&logo=pandas&logoColor=white"/>
+  <img alt="BeautifulSoup" src="https://img.shields.io/badge/BeautifulSoup-%23366088.svg?&style=for-the-badge&logo=python&logoColor=white"/>
+  <img alt="Matplotlib" src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?&style=for-the-badge&logo=matplotlib&logoColor=black"/>
+  <img alt="Seaborn" src="https://img.shields.io/badge/Seaborn-%231572B6.svg?&style=for-the-badge&logo=python&logoColor=white"/>
+  <img alt="Folium" src="https://img.shields.io/badge/Folium-%232C3E50.svg?&style=for-the-badge&logo=leaflet&logoColor=white"/>
+  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-%23003B57.svg?&style=for-the-badge&logo=sqlite&logoColor=white"/>
+  <img alt="Scikit-learn" src="https://img.shields.io/badge/Scikit--learn-%23F7931E.svg?&style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+  <img alt="Dash" src="https://img.shields.io/badge/Dash-%2300171B.svg?&style=for-the-badge&logo=plotly&logoColor=white"/>
+  <img alt="tqdm" src="https://img.shields.io/badge/tqdm-%23FFD700.svg?&style=for-the-badge&logo=python&logoColor=blue"/>
+</a>
+
+---
+
+## 🚀 How to Use This Project
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/your-username/spacex-falcon9-analysis.git
+   cd spacex-falcon9-analysis
+   ```
+
+2. Install dependencies
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the notebooks in the order provided to follow the full pipeline.
+
+4. Start the Dash application
+
+   ```bash
+   python spacex_dash_app.py
+   ```
+
+---
+
+## 📌 Key Findings
+
+* Launch success is highly correlated with **launch site**, **payload mass**, and **orbit type**.
+* Machine learning models achieved good accuracy predicting first-stage landing success.
+* Geospatial analysis revealed visual clusters of success/failure zones.
+
+---
+
+## 📈 Future Improvements
+
+* Add more recent launch data via the SpaceX API.
+* Engineer more complex features (weather, booster version, etc.).
+* Explore advanced ML models like Gradient Boosting or Neural Nets.
+* Expand dashboard features with filters, timelines, and real-time updates.
+
+---
+
+## 🔗 Live Demo
+
+[🌐 View the deployed dashboard on Render](https://spacex-falcon9-landing-prediction-keoh.onrender.com/)
+
+---
+
+## 🙌 Credits
+
+Developed as part of a Data Science course using IBM-provided datasets and labs.
