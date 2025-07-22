@@ -43,7 +43,7 @@ This project analyzes **SpaceX Falcon 9** rocket launches to predict first-stage
   * **SVM**
   * **KNN**
   * **Decision Trees**
-  * Hyperparameter tuning & evaluation
+  * **Hyperparameter tuning & evaluation**
 
 ### 📈 Interactive Dashboard
 
